@@ -1,19 +1,9 @@
 <?php
-namespace backend\controllers;
+namespace console\controllers;
 
-use frontend\models\ResendVerificationEmailForm;
-use frontend\models\VerifyEmailForm;
-use Yii;
-use yii\base\InvalidArgumentException;
-use yii\web\BadRequestHttpException;
-use yii\web\Controller;
-use yii\filters\VerbFilter;
-use yii\filters\AccessControl;
-use common\models\LoginForm;
-use frontend\models\PasswordResetRequestForm;
-use frontend\models\ResetPasswordForm;
-use frontend\models\SignupForm;
-use frontend\models\ContactForm;
+
+use yii\console\Controller;
+
 
 /**
  * Site controller
@@ -25,6 +15,6 @@ class TestController extends Controller
 
     public function actionIndex()
     {
-        return 'test';
+        echo 'test' . PHP_EOL;
     }
 }
